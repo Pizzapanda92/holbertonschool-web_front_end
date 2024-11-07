@@ -59,7 +59,7 @@
 
     --header-padding: 4rem 0 0;
     --header-logo-position: relative;
-    --header-logo-link-displa: inline-block;
+    --header-logo-link-display: inline-block;
     --header-logo-link-position: absolute;
     --header-logo-link-top: -1rem;
     --header-logo-link-left: 0;
@@ -84,7 +84,6 @@ body{
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-base);
 }
-
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
@@ -132,7 +131,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: var(--section-footer-padding);
     text-align: var(--section-footer-align);
 }
-
 
 a:link{
     color: var(--text-color);
@@ -299,7 +297,7 @@ ul.row{
     color: var(--color-primary);
 }
 
-.card-work .carde-outer {
+.card-work .card-outer {
     position: relative;
     overflow: hidden;
 }
@@ -314,6 +312,7 @@ ul.row{
     width: 100%;
     object-fit: cover;
     vertical-align: bottom;
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work .card-inner{
@@ -355,7 +354,6 @@ ul.row{
 .card-work:hover .card-title{
     opacity: 1;
 }
-
 
 .section-hero {
     background-size: 90rem auto;
